@@ -1,0 +1,60 @@
+{
+	"name": "org2-network",
+	"version": "1.0.0",
+	"license": "Apache-2.0",
+	"client": {
+		"tlsEnable": true,
+		"adminUser": "admin",
+		"adminPassword": "adminpw",
+		"enableAuthentication": false,
+		"organization": "Org2",
+		"connection": {
+			"timeout": {
+				"peer": {
+					"endorser": "300"
+				},
+				"orderer": "300"
+			}
+		}
+	},
+	"channels": {
+		"mychannel": {
+			"peers": {
+				"peer0.sup.track.com": {}
+			},
+			"connection": {
+				"timeout": {
+					"peer": {
+						"endorser": "6000",
+						"eventHub": "6000",
+						"eventReg": "6000"
+					}
+				}
+			}
+		}
+	},
+	"organizations": {
+		"SUPMSP": {
+			"mspid": "SUPMSP",
+			"fullpath": true,
+			"adminPrivateKey": {
+				"path": "/Users/sfuhaid/fabricpath/crypto-config/peerOrganizations/sup.track.com/users/Admin@sup.track.com/msp/keystore/0a167bf2f0daffcce7a5201188ef96fed5eefd33c594739addf9b139f346c46a_sk"
+			},
+			"signedCert": {
+				"path": "/Users/sfuhaid/fabricpath/crypto-config/peerOrganizations/sup.track.com/users/Admin@sup.track.com/msp/signcerts/Admin@sup.track.com-cert.pem"
+			}
+		}
+	},
+	"peers": {
+		"peer0.sup.track.com": {
+			"tlsCACerts": {
+				"path": "/Users/sfuhaid/fabricpath/crypto-config/peerOrganizations/sup.track.com/peers/peer0.sup.track.com/tls/ca.crt"
+			},
+			"url": "grpcs://localhost:9051",
+			"eventUrl": "grpcs://localhost:9053",
+			"grpcOptions": {
+				"ssl-target-name-override": "peer0.sup.track.com"
+			}
+		}
+	}
+}

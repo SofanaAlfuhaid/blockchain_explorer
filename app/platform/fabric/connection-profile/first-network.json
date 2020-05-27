@@ -38,17 +38,17 @@
 			"mspid": "CSTMSP",
 			"fullpath": true,
 			"adminPrivateKey": {
-				"path": "./crypto-config/peerOrganizations/cst.track.com/users/Admin@cst.track.com/msp/keystore/221619f6fe6c5a54bc3a66f00379dc520e3a0cfcfc52d18e5f776cc1b6d47b22_sk"
+				"path": "/Users/sfuhaid/fabricpath/crypto-config/peerOrganizations/cst.track.com/users/Admin@cst.track.com/msp/keystore/221619f6fe6c5a54bc3a66f00379dc520e3a0cfcfc52d18e5f776cc1b6d47b22_sk"
 			},
 			"signedCert": {
-				"path": "./crypto-config/peerOrganizations/cst.track.com/users/Admin@cst.track.com/msp/signcerts/Admin@cst.track.com-cert.pem"
+				"path": "/Users/sfuhaid/fabricpath/crypto-config/peerOrganizations/cst.track.com/users/Admin@cst.track.com/msp/signcerts/Admin@cst.track.com-cert.pem"
 			}
 		}
 	},
 	"peers": {
 		"peer0.cst.track.com": {
 			"tlsCACerts": {
-				"path": "./crypto-config/peerOrganizations/cst.track.com/peers/peer0.cst.track.com/tls/ca.crt"
+				"path": "/Users/sfuhaid/fabricpath/crypto-config/peerOrganizations/cst.track.com/peers/peer0.cst.track.com/tls/ca.crt"
 			},
 			"url": "grpcs://localhost:7051",
 			"eventUrl": "grpcs://localhost:7053",
